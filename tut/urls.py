@@ -12,6 +12,6 @@ print entry_resource.urls
 print v1_api
 
 urlpatterns = patterns('',
-  url(r'^api/', include(entry_resource.urls)),
-	#url(r'api/doc/', include('tastypie_swagger.urls', namespace='tastypie_swagger')),
+  (r'^api/', include(entry_resource.urls)),
+	(r'api/doc/', include('tastypie_swagger.urls', namespace='tastypie_swagger')),
 )
