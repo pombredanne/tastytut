@@ -10,7 +10,13 @@ Python 2.7.2
 	django-admin.py startproject tut
 	cd tut
 	python manage.py startapp myapp
-	python manage.py runserver 8990 # works
+	python manage.py runserver # works
 	# configure myapp/models.py per tutorial
 	# configure myapp/api.py per tutorial
 	# configure tut/urls.py per tutorial
+	python manage.py syncdb # produces tut.sqlite
+	python manage.py runserver
+
+# Result:
+
+	"error_message": "maximum recursion depth exceeded"
