@@ -1,4 +1,3 @@
-[running server](http://tastytut.nicerobot.c9.io/api/entry/?format=json)
 
 # Steps:
 
@@ -18,7 +17,3 @@ Python 2.7.2
 	# configure tut/urls.py per tutorial
 	python manage.py syncdb # produces tut.sqlite
 	python manage.py runserver
-
-# Result:
-
-	"error_message": "maximum recursion depth exceeded"
